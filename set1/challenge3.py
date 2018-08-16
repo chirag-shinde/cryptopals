@@ -25,5 +25,6 @@ def single_byte_xor_cipher(hex_str):
         answer = bytearray(l).decode()
         scores.append(get_frequency(answer))
         l = []
-    print(max(scores, key=lambda x: x[0]))
+    return max(scores, key=lambda x: x[0])
+    
 single_byte_xor_cipher(hex_str)
